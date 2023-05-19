@@ -1,10 +1,538 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Юридическая компания - Федерация</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Ubuntu:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" href="./img/garantia.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css"
+    />
+    <link rel="stylesheet" href="./css/intlTelInput.css" />
+    <link rel="stylesheet" href="./scss/main.css" />
   </head>
-  <body></body>
+  <body>
+    <!--------------- Шапка --------------->
+    <header class="header">
+      <div class="container">
+        <div class="header__block--all">
+          <div class="header__block--a">
+            <img
+              src="./img/garantia.png"
+              alt="защита"
+              class="header__icon--one"
+              width="40"
+            />
+            <p class="header__txt--one">
+              Успешно возвращаем деньги от мошенников в СНГ и Европе
+            </p>
+          </div>
+          <div class="header__block--b">
+            <img
+              src="./img/1635975816_1-papik-pro-p-gerb-vektornii-risunok-1.png"
+              alt="герб"
+              class="logo"
+              width="80"
+            />
+            <div class="head__pos">
+              <p class="logo__det">ЮРИДИЧЕСКАЯ КОМПАНИЯ</p>
+              <a href="./index.html" class="logo__txt link">Федерация</a>
+            </div>
+          </div>
+          <div class="header__block--c">
+            <img
+              src="./img/calidad.png"
+              alt="гарантия"
+              class="header__icon--two"
+              width="50"
+            />
+            <p class="header__txt--two">
+              Работаем с 2019 г. Более 1824 клиентов
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-------------------- Герой --------------------->
+    <main>
+      <section class="hero">
+        <div class="container">
+          <h1 class="title">
+            <span class="title__accent">Поможем вернуть деньги</span> от
+            псевдоброкеров и крипто мошенников
+          </h1>
+          <p class="hero__sub-title">
+            Возвращаем оплаты картой, переводы с карты на карту, электронные
+            кошельки и криптовалютные операции.
+          </p>
+          <div class="hero__block">
+            <img
+              src="./img/exclamation_mark.png"
+              alt="знак восклицания"
+              class="hero__icon--one"
+              width="60"
+            />
+            <p class="hero__question">
+              Перевели деньги мошенникам. Что делать?
+            </p>
+          </div>
+          <div class="hero__block-a">
+            <div class="hero_b">
+              <div class="hero__block-b">
+                <img src="./img/pdf.svg" alt="pdf" class="hero__icon--two" />
+                <p class="hero__txt">
+                  Получите прогноз возврата на основе нашего опыта более 3 000
+                  проектов
+                </p>
+              </div>
+              <a href="#form" class="button link">Вернуть деньги</a>
+            </div>
+          </div>
+        </div>
+        <img
+          src="./img/hand.png"
+          alt="рука с деньгами"
+          width="640"
+          class="hand rotateInUpRight"
+        />
+      </section>
+      <!-------------------- Преимущества -------------------->
+      <section class="back">
+        <div class="container">
+          <ul class="list back__list">
+            <li class="back__li">
+              <p class="back__txt back__txt--law">
+                <span class="back__txt--accent">40 юристов в штате</span> с
+                опытом более 5-ти лет
+              </p>
+              <img
+                src="./img/law.png"
+                alt="юристы"
+                class="back__law"
+                width="277"
+              />
+            </li>
+            <li class="back__li">
+              <p class="back__sum">1 983 240 000 р.</p>
+              <span class="back__txt back__txt--sum back__txt--accent"
+                >вернули нашим клиентам</span
+              >
+              <img
+                src="./img/money.png"
+                alt="деньги"
+                class="back__money"
+                width="206"
+              />
+            </li>
+            <li class="back__li">
+              <p class="back__txt back__txt--egg">
+                <span class="back__txt--accent">Без скрытых комиссий</span> и
+                дополнительных платежей
+              </p>
+              <img
+                src="./img/pngegg.png"
+                alt="комиссии"
+                class="back__calc"
+                width="170"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!------------------- Форма -------------------->
+      <section class="forma">
+        <div class="container">
+          <a name="form"
+            ><h2 class="title__form">Получите прогноз возврата денег</h2></a
+          >
+          <p class="forma__txt">
+            Мы проведем анализ мошенников и предложим варианты решения. Наши
+            юристы сразу свяжутся с Вами и помогут оформить процедуру возврата.
+          </p>
+
+          <!-- Слайдер -->
+          <form id="regForm" method="POST" action="">
+            <!-- Прокрутка -->
+            <div style="display: flex; justify-content: flex-end; gap: 6px">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+
+            <!-- Блок с ползунком -->
+
+            <div class="tab">
+              <div class="div__title">
+                <div class="regForm__block">
+                  <img
+                    src="./img/Daco_217370.png"
+                    alt="вопрос"
+                    width="60"
+                    height="60"
+                    class="regForm__img"
+                  />
+                  <h3 class="regForm__title">Какую сумму потеряли?</h3>
+                </div>
+              </div>
+
+              <div class="ctrl">
+                <input
+                  class="input__num"
+                  id="num"
+                  type="number"
+                  min="100000"
+                  max="2000000"
+                  value="0"
+                />
+
+                <input
+                  class="slider"
+                  id="range"
+                  type="range"
+                  min="100000"
+                  max="2000000"
+                  value="0"
+                />
+                <ul class="list slider__list">
+                  <li class="slider__li">100 000 р.</li>
+                  <li class="slider__li">500 000 р.</li>
+                  <li class="slider__li">1 000 000 р.</li>
+                  <li class="slider__li">1 500 000 р.</li>
+                  <li class="slider__li">2 000 000 р.</li>
+                </ul>
+              </div>
+              <img src="./img/rub.png" alt="" width="400" class="dollar" />
+            </div>
+
+            <!-- Блок с картинками -->
+            <div class="tab">
+              <div class="div__title">
+                <div class="regForm__block">
+                  <img
+                    src="./img/Daco_217370.png"
+                    alt="вопрос"
+                    width="60"
+                    height="60"
+                    class="regForm__img"
+                  />
+                  <h3 class="regForm__title">Как отправили?</h3>
+                </div>
+              </div>
+              <div class="form__checkbox">
+                <label>
+                  <input type="checkbox" name="method" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <img src="./img/oplata-po-karte_2.jpg" alt="" width="160" />
+                  <p class="check_txt check_txt--a">
+                    Онлайн с карты (Visa/ Mastercard/ Maestro/ МИР)
+                  </p>
+                </label>
+
+                <label>
+                  <input type="checkbox" name="method" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <img src="./img/karta.jpeg" alt="" width="170" />
+                  <p class="check_txt">С карты на карту</p>
+                </label>
+                <label>
+                  <input type="checkbox" name="method" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <img src="./img/quiz-2-4@x2.webp" alt="" width="160" />
+                  <p class="check_txt">На криптовалютный кошелек</p>
+                </label>
+                <label>
+                  <input type="checkbox" name="method" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <img src="./img/qiwi.jpg" alt="" width="150" />
+                  <p class="check_txt check_txt--b">На электронные кошельки</p>
+                </label>
+                <label>
+                  <input type="checkbox" name="method" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <img src="./img/quiz-2-5@x2.webp" alt="" width="160" />
+                  <p class="check_txt check_txt--c">Другим способом</p>
+                </label>
+              </div>
+            </div>
+
+            <!-- Блок Что за компания -->
+            <div class="tab">
+              <div class="div__title">
+                <div class="regForm__block">
+                  <img
+                    src="./img/Daco_217370.png"
+                    alt="вопрос"
+                    width="60"
+                    height="60"
+                    class="regForm__img"
+                  />
+                  <h3 class="regForm__title">Кому переводили деньги?</h3>
+                </div>
+              </div>
+              <svg class="pen__icon" width="18" height="18">
+                <use href="./img/ico.svg#icon-pencil"></use>
+              </svg>
+
+              <!-- <input type="text" name="company" class="input" /> -->
+              <textarea
+                name="company"
+                id=""
+                cols="30"
+                rows="10"
+                class="input textarea"
+              ></textarea>
+              <label class="who">
+                <input type="checkbox" name="company" class="checkbox" />
+                <span class="checkbox__icon"></span>
+                <p class="txt__who">Не знаю</p>
+              </label>
+            </div>
+
+            <!-- Как давно это было -->
+
+            <div class="tab">
+              <div class="div__title">
+                <div class="regForm__block">
+                  <img
+                    src="./img/Daco_217370.png"
+                    alt="вопрос"
+                    width="60"
+                    height="60"
+                    class="regForm__img"
+                  />
+                  <h3 class="regForm__title">
+                    Сколько времени прошло с момента оплаты?
+                  </h3>
+                </div>
+              </div>
+              <div class="how__block">
+                <label class="how">
+                  <input type="radio" name="time" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <p class="txt__how">Менее 7 дней</p>
+                </label>
+                <label class="how">
+                  <input type="radio" name="time" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <p class="txt__how">До 30 дней</p>
+                </label>
+                <label class="how">
+                  <input type="radio" name="time" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <p class="txt__how">1-3 месяца</p>
+                </label>
+                <label class="how">
+                  <input type="radio" name="time" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <p class="txt__how">Около 1 года</p>
+                </label>
+                <label class="how">
+                  <input type="radio" name="time" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <p class="txt__how">До 2 лет</p>
+                </label>
+                <label class="how">
+                  <input type="radio" name="time" class="checkbox" />
+                  <span class="checkbox__icon"></span>
+                  <p class="txt__how">Более 2 лет</p>
+                </label>
+              </div>
+            </div>
+
+            <!-- Форма -->
+            <div class="tab">
+              <div class="div__title mar__block">
+                <div class="regForm__block">
+                  <img
+                    src="./img/galochka-zelenaya.png"
+                    alt="галочка"
+                    width="35"
+                    height="60"
+                    class="regForm__img"
+                  />
+                  <h3 class="regForm__title">Ваши ответы приняты!</h3>
+                </div>
+              </div>
+
+              <div class="form__block-all">
+                <div class="form__block-one">
+                  <p class="title__form--yel">
+                    Заполните форму и получите прогноз от наших юристов!
+                  </p>
+                  <p class="title__form--darck">Мы уже готовим:</p>
+                  <ul class="list form__list--com">
+                    <li class="form__list--li">
+                      <svg class="form-list__icon" width="18" height="18">
+                        <use href="./img/ico.svg#icon-notification"></use></svg
+                      >анализ мошенников;
+                    </li>
+                    <li class="form__list--li">
+                      <svg class="form-list__icon" width="18" height="18">
+                        <use href="./img/ico.svg#icon-notification"></use></svg
+                      >вероятность возврата денег;
+                    </li>
+                    <li class="form__list--li">
+                      <svg class="form-list__icon" width="18" height="18">
+                        <use href="./img/ico.svg#icon-notification"></use></svg
+                      >схему возврата.
+                    </li>
+                  </ul>
+                </div>
+                <div class="forma-plus">
+                  <div class="user-email__block">
+                    <input
+                      type="text"
+                      name="user-name"
+                      id="user-name"
+                      class="input forma-plus__input"
+                      placeholder="Имя и Фамилия"
+                      required
+                    />
+                    <svg class="user-email__icon" width="18" height="18">
+                      <use href="./img/ico.svg#icon-person"></use>
+                    </svg>
+                  </div>
+                  <input
+                    type="tel"
+                    name="phone_number[main]"
+                    id="phone_number"
+                    class="input forma-plus__input"
+                    onkeyup="this.value = this.value.replace(/[^\d]/g,'');"
+                    required
+                  />
+                  <div class="user-email__block">
+                    <input
+                      type="email"
+                      name="user-email"
+                      id="user-email"
+                      class="input forma-plus__input"
+                      placeholder="E-mail"
+                      required
+                    />
+                    <svg class="user-email__icon" width="18" height="18">
+                      <use href="./img/ico.svg#icon-email"></use>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Кнопки -->
+            <div style="overflow: auto">
+              <div
+                style="
+                  margin-top: 30px;
+                  display: flex;
+                  justify-content: space-between;
+                "
+              >
+                <button
+                  type="button"
+                  class="button button__form button__back"
+                  id="prevBtn"
+                  onclick="nextPrev(-1)"
+                >
+                  « Назад
+                </button>
+                <button
+                  type="button"
+                  class="button button__form"
+                  id="nextBtn"
+                  onclick="nextPrev(1)"
+                >
+                  Дальше »
+                </button>
+              </div>
+            </div>
+          </form>
+          <!-- КОнец -->
+        </div>
+      </section>
+    </main>
+    <!------------------- Футтер ------------------->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__lock">
+          <div class="footer__log">
+            <div class="header__block--b">
+              <img
+                src="./img/1635975816_1-papik-pro-p-gerb-vektornii-risunok-1.png"
+                alt="герб"
+                class="logo"
+                width="80"
+              />
+              <div class="head__pos">
+                <p class="logo__det">ЮРИДИЧЕСКАЯ КОМПАНИЯ</p>
+                <a href="./index.html" class="logo__txt link">Федерация</a>
+              </div>
+            </div>
+            <p class="footer__txt">
+              В соответствии с Федеральным законом от 21 ноября 2011 г. N 324-ФЗ
+              "О бесплатной юридической помощи в Российской Федерации"
+            </p>
+          </div>
+          <div class="footer__all">
+            <img src="./img/dogovor.svg" alt="договор" width="75" />
+            <p class="footer__dogov">
+              Работаем исключительно по договору и доводим дела до результата.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script>
+      $("button").click(function () {
+        $("#Bblue").css({ "accent-color": "green" });
+      });
+    </script>
+    <script
+      src="https://code.jquery.com/jquery-3.6.3.min.js"
+      integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./js/form.js"></script>
+    <script src="./js/slider.js"></script>
+    <!-- load jQuery library -->
+    <script src="js/jquery.min.js"></script>
+
+    <!-- load plugin -->
+    <script src="js/intlTelInput.js"></script>
+
+    <script>
+      var input = document.querySelector("#phone_number");
+      intlTelInput(input, {
+        initialCountry: "auto",
+        hiddenInput: "full",
+        separateDialCode: true,
+        geoIpLookup: function (success, failure) {
+          $.get("https://ipinfo.io", function () {}, "jsonp").always(function (
+            resp
+          ) {
+            var countryCode = resp && resp.country ? resp.country : "";
+            success(countryCode);
+          });
+        },
+        utilsScript: "./js/utils.js",
+      });
+    </script>
+  </body>
 </html>
