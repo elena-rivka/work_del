@@ -1,0 +1,53 @@
+.footer {
+    padding-bottom: 45px;
+}
+
+.footer__txt {
+    font-size: 14px;
+    line-height: 1.4;
+    width: 100%;
+    text-align: center;
+    margin-top: 37px;
+
+    color: rgba(255, 255, 255, 0.39);
+
+    @include desktop {
+        font-size: 16px;
+        width: 388px;
+        text-align: left;
+    }
+}
+
+.footer__dogov {
+    font-size: 14px;
+    line-height: 1.4;
+
+    color: #ffffff;
+
+    @include desktop {
+        font-size: 16px;
+    }
+}
+
+.footer__lock {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #939291;
+    padding-top: 50px;
+
+    @include desktop {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0;
+    }
+}
+
+.footer__all {
+    display: flex;
+    align-items: center;
+    gap: 19px;
+    width: 327px;
+}

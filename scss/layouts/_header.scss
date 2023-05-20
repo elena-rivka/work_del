@@ -1,0 +1,54 @@
+.header {
+    padding-top: 12px;
+}
+
+.header__txt--one {
+    font-size: 16px;
+    color: #fff;
+}
+
+.header__txt--two {
+    font-size: 16px;
+    color: #fff;
+}
+
+.header__block--all {
+    display: flex;
+    gap: 113px;
+    align-items: center;
+    padding-bottom: 7px;
+    border-bottom: 1px solid #939291;
+}
+
+.header__block--a {
+    width: 305px;
+    display: flex;
+    height: 40px;
+    gap: 5px;
+    align-items: center;
+    display: none;
+
+    @include desktop {
+        display: flex;
+    }
+}
+
+.header__block--c {
+    display: flex;
+    width: 230px;
+    margin-left: 73px;
+    display: none;
+
+    @include desktop {
+        display: flex;
+    }
+}
+
+.header__icon--two {
+    height: 50px;
+}
+
+.logo__txt {
+    background-color: #007e42;
+    padding: 3px 3px 7px;
+}

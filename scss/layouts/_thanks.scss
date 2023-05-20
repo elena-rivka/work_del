@@ -1,0 +1,52 @@
+.thanks {
+    padding-top: 77px;
+    padding-bottom: 150px;
+    background-image: url(../img/man1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    max-width: 100%;
+
+    @include desktop {
+        padding-top: 179px;
+        padding-bottom: 335px;
+    }
+}
+
+.thanks__block-title {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include desktop {
+        width: 835px;
+        text-align: left;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+.thanks__txt {
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 30px;
+
+    @include desktop {
+        font-size: 20px;
+        margin-top: 0;
+    }
+}
+
+.footer_mes-ing {
+    width: 50px;
+
+    @include desktop {
+        width: 75px;
+    }
+}

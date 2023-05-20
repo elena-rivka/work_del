@@ -19,13 +19,12 @@
       rel="stylesheet"
     />
     <link rel="icon" href="./img/garantia.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css"
     />
     <link rel="stylesheet" href="./css/intlTelInput.css" />
-    <link rel="stylesheet" href="./scss/main.css" />
+    <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
     <!--------------- Шапка --------------->
@@ -167,9 +166,9 @@
           </p>
 
           <!-- Слайдер -->
-          <form id="regForm" method="POST" action="">
+          <form id="regForm" method="POST" action="./telegram.php">
             <!-- Прокрутка -->
-            <div style="display: flex; justify-content: flex-end; gap: 6px">
+            <div class="step__form">
               <span class="step"></span>
               <span class="step"></span>
               <span class="step"></span>
@@ -197,6 +196,7 @@
                 <input
                   class="input__num"
                   id="num"
+                  name="num"
                   type="number"
                   min="100000"
                   max="2000000"
@@ -206,6 +206,7 @@
                 <input
                   class="slider"
                   id="range"
+                  name="range"
                   type="range"
                   min="100000"
                   max="2000000"
@@ -238,36 +239,91 @@
               </div>
               <div class="form__checkbox">
                 <label>
-                  <input type="checkbox" name="method" class="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="method"
+                    id="method"
+                    class="checkbox"
+                    value="Онлайн с карты"
+                  />
                   <span class="checkbox__icon"></span>
-                  <img src="./img/oplata-po-karte_2.jpg" alt="" width="160" />
+                  <img
+                    src="./img/oplata-po-karte_2.jpg"
+                    class="img-metod"
+                    alt=""
+                    width="160"
+                  />
                   <p class="check_txt check_txt--a">
                     Онлайн с карты (Visa/ Mastercard/ Maestro/ МИР)
                   </p>
                 </label>
 
                 <label>
-                  <input type="checkbox" name="method" class="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="method"
+                    id="method"
+                    class="checkbox"
+                    value="С карты на карту"
+                  />
                   <span class="checkbox__icon"></span>
-                  <img src="./img/karta.jpeg" alt="" width="170" />
+                  <img
+                    src="./img/karta.jpeg"
+                    class="img-metod"
+                    alt=""
+                    width="170"
+                  />
                   <p class="check_txt">С карты на карту</p>
                 </label>
                 <label>
-                  <input type="checkbox" name="method" class="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="method"
+                    id="method"
+                    class="checkbox"
+                    value="Криптовалюта"
+                  />
                   <span class="checkbox__icon"></span>
-                  <img src="./img/quiz-2-4@x2.webp" alt="" width="160" />
+                  <img
+                    src="./img/quiz-2-4@x2.webp"
+                    class="img-metod"
+                    alt=""
+                    width="160"
+                  />
                   <p class="check_txt">На криптовалютный кошелек</p>
                 </label>
                 <label>
-                  <input type="checkbox" name="method" class="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="method"
+                    id="method"
+                    class="checkbox"
+                    value="Электронные кошельки"
+                  />
                   <span class="checkbox__icon"></span>
-                  <img src="./img/qiwi.jpg" alt="" width="150" />
+                  <img
+                    src="./img/qiwi.jpg"
+                    class="img-metod"
+                    alt=""
+                    width="150"
+                  />
                   <p class="check_txt check_txt--b">На электронные кошельки</p>
                 </label>
                 <label>
-                  <input type="checkbox" name="method" class="checkbox" />
+                  <input
+                    type="checkbox"
+                    name="method"
+                    id="method"
+                    class="checkbox"
+                    value="Другое"
+                  />
                   <span class="checkbox__icon"></span>
-                  <img src="./img/quiz-2-5@x2.webp" alt="" width="160" />
+                  <img
+                    src="./img/quiz-2-5@x2.webp"
+                    class="img-metod"
+                    alt=""
+                    width="160"
+                  />
                   <p class="check_txt check_txt--c">Другим способом</p>
                 </label>
               </div>
@@ -290,17 +346,21 @@
               <svg class="pen__icon" width="18" height="18">
                 <use href="./img/ico.svg#icon-pencil"></use>
               </svg>
-
-              <!-- <input type="text" name="company" class="input" /> -->
               <textarea
                 name="company"
-                id=""
+                id="company"
                 cols="30"
                 rows="10"
                 class="input textarea"
               ></textarea>
               <label class="who">
-                <input type="checkbox" name="company" class="checkbox" />
+                <input
+                  type="checkbox"
+                  name="nocompany"
+                  id="nocompany"
+                  class="checkbox"
+                  value="не помню"
+                />
                 <span class="checkbox__icon"></span>
                 <p class="txt__who">Не знаю</p>
               </label>
@@ -318,39 +378,73 @@
                     height="60"
                     class="regForm__img"
                   />
-                  <h3 class="regForm__title">
-                    Сколько времени прошло с момента оплаты?
-                  </h3>
+                  <h3 class="regForm__title">Когда проводилась оплата?</h3>
                 </div>
               </div>
               <div class="how__block">
                 <label class="how">
-                  <input type="radio" name="time" class="checkbox" />
+                  <input
+                    type="radio"
+                    name="time"
+                    id="time"
+                    value="Менее 7 дней"
+                    class="checkbox"
+                  />
                   <span class="checkbox__icon"></span>
                   <p class="txt__how">Менее 7 дней</p>
                 </label>
                 <label class="how">
-                  <input type="radio" name="time" class="checkbox" />
+                  <input
+                    type="radio"
+                    name="time"
+                    id="time"
+                    value="До 30 дней"
+                    class="checkbox"
+                  />
                   <span class="checkbox__icon"></span>
                   <p class="txt__how">До 30 дней</p>
                 </label>
                 <label class="how">
-                  <input type="radio" name="time" class="checkbox" />
+                  <input
+                    type="radio"
+                    name="time"
+                    id="time"
+                    value="1-3 месяца"
+                    class="checkbox"
+                  />
                   <span class="checkbox__icon"></span>
                   <p class="txt__how">1-3 месяца</p>
                 </label>
                 <label class="how">
-                  <input type="radio" name="time" class="checkbox" />
+                  <input
+                    type="radio"
+                    name="time"
+                    id="time"
+                    value="Около 1 года"
+                    class="checkbox"
+                  />
                   <span class="checkbox__icon"></span>
                   <p class="txt__how">Около 1 года</p>
                 </label>
                 <label class="how">
-                  <input type="radio" name="time" class="checkbox" />
+                  <input
+                    type="radio"
+                    name="time"
+                    id="time"
+                    value="До 2 лет"
+                    class="checkbox"
+                  />
                   <span class="checkbox__icon"></span>
                   <p class="txt__how">До 2 лет</p>
                 </label>
                 <label class="how">
-                  <input type="radio" name="time" class="checkbox" />
+                  <input
+                    type="radio"
+                    name="time"
+                    id="time"
+                    value="Более 2 лет"
+                    class="checkbox"
+                  />
                   <span class="checkbox__icon"></span>
                   <p class="txt__how">Более 2 лет</p>
                 </label>
@@ -366,7 +460,7 @@
                     alt="галочка"
                     width="35"
                     height="60"
-                    class="regForm__img"
+                    class="regForm__img zelenaya"
                   />
                   <h3 class="regForm__title">Ваши ответы приняты!</h3>
                 </div>
@@ -437,13 +531,7 @@
 
             <!-- Кнопки -->
             <div style="overflow: auto">
-              <div
-                style="
-                  margin-top: 30px;
-                  display: flex;
-                  justify-content: space-between;
-                "
-              >
+              <div class="button-form__pos">
                 <button
                   type="button"
                   class="button button__form button__back"
@@ -463,7 +551,6 @@
               </div>
             </div>
           </form>
-          <!-- КОнец -->
         </div>
       </section>
     </main>
@@ -490,7 +577,12 @@
             </p>
           </div>
           <div class="footer__all">
-            <img src="./img/dogovor.svg" alt="договор" width="75" />
+            <img
+              src="./img/dogovor.svg"
+              class="footer_mes-ing"
+              alt="договор"
+              width="75"
+            />
             <p class="footer__dogov">
               Работаем исключительно по договору и доводим дела до результата.
             </p>

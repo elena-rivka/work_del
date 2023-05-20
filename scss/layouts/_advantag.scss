@@ -1,0 +1,92 @@
+.back {
+    padding-bottom: 71px;
+
+    @include desktop {
+        padding-bottom: 107px;
+    }
+}
+
+.back__txt--accent {
+    color: #fbcc27;
+}
+
+.back__txt {
+    line-height: 1.4;
+    color: #fff;
+}
+
+.back__list {
+    display: flex;
+    gap: 48px;
+    text-align: center;
+    position: relative;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @include desktop {
+        flex-wrap: nowrap;
+    }
+}
+
+.back__li {
+    width: 338px;
+    height: 201px;
+    background: #6e6e6e;
+    border-radius: 20px;
+    font-size: 16px;
+
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+.back__txt--law {
+    width: 252px;
+    margin: 0 auto;
+    padding-top: 27px;
+    font-size: 16px;
+    
+    @include desktop {
+        font-size: 20px;
+    }
+}
+
+.back__law {
+    margin: 0 auto;
+}
+
+.back__sum {
+    background-color: #d9d9d9;
+    border: 1px solid rgba(0, 0, 0, 0.52);
+    padding: 3px 44px;
+    margin-top: 32px;
+    margin-left: 44px;
+    margin-right: 44px;
+    color: #1e1e1e;
+}
+
+.back__txt--sum {
+    margin-top: 11px;
+}
+
+.back__txt--egg {
+    width: 190px;
+    text-align: left;
+    margin-top: 32px;
+    margin-left: 34px;
+}
+
+.back__calc {
+    position: absolute;
+    top: 549px;
+    right: 6px;
+    
+    @include tablet {
+        top: 292px;
+        right: 200px;
+    }
+        @include desktop {
+            top: 63px;
+            right: -6px;
+        }
+}

@@ -1,0 +1,564 @@
+.title__form {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.3;
+    text-align: center;
+    margin-bottom: 22px;
+
+    color: #fff;
+
+    @include desktop {
+        font-size: 40px;
+    margin-bottom: 29px;
+    line-height: 1.5;
+    }
+}
+
+.forma__txt {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 16px;
+
+    color: #fff;
+
+    @include desktop {
+        font-size: 20px;
+        width: 779px;
+    }
+}
+
+/* Стиль формы */
+
+/* Style the form */
+#regForm {
+    background-color: #ffffff;
+    margin: 56px auto;
+    padding: 50px 20px;
+    width: 100%;
+    min-width: 300px;
+    border-radius: 20px;
+
+    position: relative;
+
+    @include desktop {
+        padding: 50px;
+        width: 90%;
+    }
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+    background-color: #ffdddd;
+    border: 1px solid #ff3737;
+}
+
+/* Hide all steps by default: */
+.tab {
+    display: none;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbbbbb;
+    border: none;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+/* Mark the active step: */
+.step.active {
+    opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+    background-color: #04aa6d;
+}
+
+.input__num {
+    border: 1px solid #9c9c9c;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    width: 100%;
+    height: 47px;
+    margin-bottom: 44px;
+    padding: 15px;
+    outline: rgba(0, 0, 0, 0);
+    background-color: #fff;
+
+    @include tablet {
+        width: 50%;
+    }
+    @include desktop {
+        width: 319px;
+        height: 55px;
+        margin-bottom: 70px;
+    }
+}
+
+.step__form {
+    display: flex;
+        justify-content: center;
+        gap: 6px;
+        margin-top: 14px;
+
+        @include desktop {
+            margin-top: 0;
+            justify-content: flex-end;
+        }
+}
+
+.slider {
+    width: 100%;
+    position: relative;
+    z-index: 5;
+
+    @include desktop {
+        width: 70%;
+    }
+}
+
+input[type="range"] {
+    accent-color: #fbcc27;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    box-shadow: 0 0 0 5px rgba(66, 75, 90, 0.16);
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.slider__li {
+    font-size: 10px;
+
+    color: rgba(68, 67, 67, 0.73);
+
+    @include tablet {
+        font-size: 14px;
+    }
+    @include desktop {
+    font-size: 16px;
+    }
+}
+
+.slider__list {
+    display: flex;
+    justify-content: space-between;
+
+    @include desktop {
+        gap: 55px;
+        justify-content: flex-start;
+    }
+}
+
+.button__form {
+    margin-bottom: 14px;
+    margin-right: 9px;
+    margin-top: 7px;
+    font-size: 24px;
+
+    padding: 9px 45px 11px;
+}
+
+.button__back {
+    background: rgba(110, 110, 110, 0.25);
+
+    &:hover, &:focus {
+            background: rgba(110, 110, 110, 0.35);
+        }
+}
+
+.regForm__img {
+    width: 30px;
+    height: 30px;
+
+    @include desktop {
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.regForm__title {
+    font-weight: 100%;
+    font-size: 16px;
+
+    color: #444343;
+
+    @include desktop {
+        font-size: 24px;
+        font-weight: 700;
+    }
+}
+
+.div__title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 70px;
+    background: rgba(110, 110, 110, 0.21);
+    border-radius: 20px 20px 0px 0px;
+    padding: 19px 29px 50px;
+    border-bottom: 5px solid rgba(156, 156, 156, 0.68);
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    @include desktop  {
+        padding: 24px 40px;
+        justify-content: space-between;
+    }
+}
+
+.tab {
+    margin-top: 84px;
+
+    @include desktop {
+        margin-top: 130px;
+    }
+}
+
+.regForm__txt {
+    font-size: 16px;
+
+    color: rgba(68, 67, 67, 0.76);
+}
+
+.regForm__block {
+    display: flex;
+    align-items: center;
+    gap: 9px;
+
+    @include desktop {
+        gap: 30px;
+    }
+}
+
+.dollar {
+    position: absolute;
+    top: 37px;
+    right: -50px;
+    display: none;
+
+    @include desktop {
+        display: block;
+    }
+}
+
+/* Блок с картинками */
+
+.form__checkbox {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @include desktop {
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        gap: 0;
+        margin-bottom: 45px;
+    }
+}
+
+.check_txt {
+    font-size: 12px;
+
+    text-align: center;
+    width: 138px;
+    margin-top: 20px;
+
+    color: rgba(68, 67, 67, 0.88);
+
+    @include desktop {
+        width: 160px;
+    }
+}
+
+.check_txt--a {
+    margin-top: 23px;
+
+    @include desktop {
+        margin-top: 50px;
+    }
+}
+
+.check_txt--b {
+    margin-top: 24px;
+}
+
+.check_txt--c {
+    margin-top: 30px;
+}
+
+.checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    position: absolute;
+}
+
+.checkbox__icon {
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border: 2px solid #fbcc27;
+    border-radius: 12px;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover, &:focus {
+            border-color: #fbcc27;
+        }
+}
+
+
+.checkbox:checked+.checkbox__icon {
+    background-color: #fbcc27;
+    border-color: #fbcc27;
+    background-image: url("../img/icon-check.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+}
+
+.input {
+    border: 1px solid #9c9c9c;
+    filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+    border-radius: 10px;
+    width: 319px;
+    height: 55px;
+    margin-bottom: 39px;
+    padding: 15px 37px;
+    outline: rgba(0, 0, 0, 0);
+}
+
+.textarea {
+    resize: none;
+}
+
+.pen__icon {
+    position: absolute;
+    left: 33px;
+    top: 37%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    z-index: 1;
+    fill: #9c9c9c;
+
+    @include tablet {
+        left: 33px;
+        top: 42%;
+    }
+    @include desktop {
+        left: 61px;
+        top: 46%;
+    }
+}
+
+.who {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.txt__who {
+    color: #444343;
+}
+
+.how__block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 27px;
+
+    margin-bottom: 45px;
+}
+
+.how {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: calc((100% - 30px) / 2);
+    font-size: 14px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    border: 1px solid rgba(0, 0, 0, 0);
+    border-radius: 4px;
+    padding: 6px 22px;
+    background-color: #f5f4fa;
+
+    @include desktop {
+        font-size: 18px;
+        width: calc((100% - 60px) / 3);
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+    }
+}
+
+.txt__how {
+    color: #444343;
+    text-align: center;
+
+    @include desktop {
+        text-align: left;
+    }
+}
+
+.zelenaya {
+        width: 44px;
+        height: 33px;
+}
+
+.mar__block {
+    padding: 30px 40px;
+}
+
+.forma-plus {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+    margin-left: 0;
+
+    @include tablet {
+        width: 50%;
+        margin: 0 auto;
+    }
+    @include desktop {
+        width: 330px;
+        margin-left: 78%;
+    }
+}
+
+.form__block-one {
+    margin: 0;
+
+    @include tablet {
+        margin: 0 auto;
+    }
+    @include desktop {
+        margin: 0;
+    }
+}
+
+.forma-plus__input {
+    margin-bottom: 24px;
+    padding: 15px 39px;
+    font-size: 18px;
+    outline: rgba(0, 0, 0, 0);
+
+    &:focus, &:hover {
+            border: 1px solid #fbcc27;
+        }
+}
+
+
+.user-email__icon {
+    fill: #6e6e6e;
+}
+
+.forma-plus__input:focus+.user-email__icon {
+    fill: #fbcc27;
+}
+
+.title__form--yel {
+    font-family: "Ubuntu";
+    font-weight: 700;
+    font-size: 18px;
+    text-align: justify;
+    width: 100%;
+    line-height: 1.3;
+    margin-bottom: 33px;
+    padding: 5px;
+
+    color: #fbcc27;
+    background-color: #6e6e6e;
+
+    @include desktop {
+        font-size: 24px;
+        width: 384px;
+    }
+}
+
+.title__form--darck {
+    font-weight: 700;
+    font-size: 20px;
+    text-align: justify;
+    margin-bottom: 8px;
+
+    color: #444343;
+}
+
+.form__list--li {
+    font-size: 16px;
+    display: flex;
+    gap: 11px;
+    align-items: center;
+    margin-bottom: 5px;
+
+    color: #444343;
+}
+
+.form__block-all {
+    display: flex;
+
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    @include desktop {
+        flex-wrap: nowrap;
+        gap: 0;
+        width: 265px;
+    }
+}
+
+.form-list__icon {
+    fill: #d73637;
+}
+
+.user-email__block {
+    position: relative;
+}
+
+.user-email__icon {
+    position: absolute;
+    left: 12px;
+    top: 35%;
+    transform: translateY(-50%);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.button-form__pos {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    @include desktop {
+        justify-content: space-between;
+        flex-wrap: nowrap;
+    }
+}
+
+.img-metod {
+    width: 100px;
+
+    @include tablet {
+        width: 172px;
+    }
+
+    @include desktop {
+        width: 150px;
+    }
+}
